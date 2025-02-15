@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Hidden Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <button type="button" id="cta-button" class="cta-btn">Open Form</button>
+
+    <div id="popupForm" class="popup-Form" style="display: none;">
+        <div class="container">
+            <span class="close-button" onclick="closeForm()">&times;</span>
+            <form action="">
+                <h1>Signup</h1>
+                <p>Please Signup with us. It is free!!</p>
+                <input type="text" class="input-field" placeholder="Full Name" required><br><br>
+                <input type="email" class="input-field" placeholder="Email" required><br><br>
+                <input type="password" class="input-field" placeholder="*****"><br><br>
+                <textarea class="input-field" placeholder="Message"></textarea><br>
+                <button type="submit" class="submit-btn">Signup</button>
+            
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('cta-button').addEventListener('click', function() {
+    document.getElementById('popupForm').style.display = 'flex';
+});
+
+function closeForm() {
+    document.getElementById('popupForm').style.display = 'none';
+}
+
+    </script>
+</body>
+</html>
