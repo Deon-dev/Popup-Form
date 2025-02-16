@@ -44,6 +44,7 @@ body {
     height: 35px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    padding: 10px;
 }
 
 .submit-btn {
@@ -66,4 +67,8 @@ button:hover {
     color: #aaa;
     float: right;
     cursor: pointer;
+}
+
+textarea {
+    overflow: hidden;
 }
