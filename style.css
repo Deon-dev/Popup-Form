@@ -70,5 +70,6 @@ button:hover {
 }
 
 textarea {
-    overflow: hidden;
+    overflow-y: scroll;
+    resize: vertical;
 }
